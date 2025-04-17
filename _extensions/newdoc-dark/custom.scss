@@ -1,0 +1,45 @@
+/*-- scss:defaults --*/
+
+// color;
+$title-author-color: white;
+$body-bg: #2E2E2E !default;
+$body-color: white !default;
+$link-color: #F6BE00 !default;
+
+// title slide
+$presentation-title-slide-text-align: left;
+
+/*-- scss:rules --*/
+
+/* TODO: Provide custom CSS rules */
+
+#title-slide {
+  text-align: left;
+  padding-left: 10em;
+  .subtitle,
+  .institute,
+  .quarto-title-affiliation,
+  .quarto-title-author-email {
+    // font-size: 80%;
+    color: $title-author-color;
+  }
+
+  .author, .quarto-title-author-name {
+    color: $title-author-color;
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    justify-content: left;
+
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+}
+
+.reveal a {
+  color: $link-color;
+}
